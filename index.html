@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Club Africain | Site de supporters (projet académique)</title>
+  <meta name="description" content="Projet web académique inspiré du Club Africain : actualités, effectif, calendrier. Site non officiel.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <a href="#accueil" class="brand">CLUB <b>AFRICAIN</b></a>
+  <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+  <nav id="menu">
+    <a href="#accueil">Accueil</a>
+    <a href="#match">Prochain match</a>
+    <a href="#actus">Actualités</a>
+    <a href="#effectif">Effectif</a>
+    <a href="#calendrier">Calendrier</a>
+    <a href="#newsletter">Newsletter</a>
+  </nav>
+</header>
+
+<section id="accueil" class="hero">
+  <div class="hero-inner">
+    <p class="tag">Site de supporters · projet académique</p>
+    <h1>Tous derrière notre club</h1>
+    <p>Retrouvez les actualités, l'effectif et le calendrier des matchs.</p>
+    <a href="#actus" class="btn">Dernières actualités</a>
+  </div>
+</section>
+
+<section id="match" class="wrap">
+  <h2>Prochain match</h2>
+  <div class="match-card">
+    <div class="team">Club Africain(Tun)</div>
+    <div class="vs">
+      <span>VS</span>
+      <div id="countdown" class="countdown" aria-live="polite"></div>
+      <small>Date et adversaire à titre d'exemple</small>
+    </div>
+    <div class="team">TP Mazembe(Drc)</div>
+  </div>
+</section>
+
+<section id="actus" class="wrap">
+  <h2>Actualités</h2>
+  <div class="grid">
+    <article class="card">
+      <div class="thumb">Actualité</div>
+      <h3>Titre de l'actualité n°1</h3>
+      <p>Résumé court de l'article. Contenu d'exemple à remplacer.</p>
+    </article>
+    <article class="card">
+      <div class="thumb">Actualité</div>
+      <h3>Titre de l'actualité n°2</h3>
+      <p>Résumé court de l'article. Contenu d'exemple à remplacer.</p>
+    </article>
+    <article class="card">
+      <div class="thumb">Actualité</div>
+      <h3>Titre de l'actualité n°3</h3>
+      <p>Résumé court de l'article. Contenu d'exemple à remplacer.</p>
+    </article>
+  </div>
+</section>
+
+<section id="effectif" class="wrap">
+  <h2>Effectif</h2>
+  <div class="filters" id="filters">
+    <button class="chip active" data-pos="all">Tous</button>
+    <button class="chip" data-pos="gardien">Gardiens</button>
+    <button class="chip" data-pos="defenseur">Défenseurs</button>
+    <button class="chip" data-pos="milieu">Milieux</button>
+    <button class="chip" data-pos="attaquant">Attaquants</button>
+  </div>
+  <div class="grid players" id="players">
+    <div class="player" data-pos="gardien"><span class="num">1</span><b>Joueur 1</b><small>Gardien</small></div>
+    <div class="player" data-pos="defenseur"><span class="num">2</span><b>Joueur 2</b><small>Défenseur</small></div>
+    <div class="player" data-pos="defenseur"><span class="num">4</span><b>Joueur 3</b><small>Défenseur</small></div>
+    <div class="player" data-pos="milieu"><span class="num">8</span><b>Joueur 4</b><small>Milieu</small></div>
+    <div class="player" data-pos="milieu"><span class="num">10</span><b>Joueur 5</b><small>Milieu</small></div>
+    <div class="player" data-pos="attaquant"><span class="num">9</span><b>Joueur 6</b><small>Attaquant</small></div>
+  </div>
+</section>
+
+<section id="calendrier" class="wrap">
+  <h2>Calendrier</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Date</th><th>Match</th><th>Compétition</th></tr></thead>
+      <tbody>
+        <tr><td>JJ/MM/AAAA</td><td>Club Africain – Adversaire A</td><td>Championnat</td></tr>
+        <tr><td>JJ/MM/AAAA</td><td>Adversaire B – Club Africain</td><td>Championnat</td></tr>
+        <tr><td>JJ/MM/AAAA</td><td>Club Africain – Adversaire C</td><td>Coupe</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="newsletter" class="wrap news">
+  <h2>Newsletter</h2>
+  <form id="newsForm" novalidate>
+    <input type="email" id="newsEmail" placeholder="Votre adresse e-mail" required>
+    <button class="btn" type="submit">S'abonner</button>
+  </form>
+  <p id="newsMsg" class="msg" role="status"></p>
+</section>
+
+<footer>
+  <p>Projet académique réalisé à l'ISET Radès. <b>Site non officiel</b>, sans lien avec le club. Les noms, dates et textes sont des exemples.</p>
+  <p>© <span id="year"></span></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
